@@ -41,7 +41,7 @@ Para otimizar o desempenho e manter a separação de responsabilidades entre as 
 
 Um exemplo prático seria configurar sua consulta utilizando um ORM adequado ao seu ambiente, como Sequelize para Node.js ou Hibernate para Java, para incluir os dados do Cliente diretamente na consulta de Pedidos. Isso não apenas reduzirá o tempo de resposta, mas também promoverá uma arquitetura mais organizada e de fácil manutenção.
 
-Se precisar de assistência adicional na implementação ou tiver outras dúvidas relacionadas, estamos à disposição para ajudar. Nosso objetivo é garantir que suas consultas sejam executadas de forma eficiente, respeitando as melhores práticas de desenvolvimento.
+Se precisar de ajuda para fazer isso ou tiver mais perguntas, estou à disposição.
 
 Agradecemos pela sua atenção e pela oportunidade de colaborar com seu projeto.
 
