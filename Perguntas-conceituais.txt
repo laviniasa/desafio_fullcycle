@@ -7,26 +7,22 @@ Se tivéssemos 20 cursos sendo retornados na listagem e pedíssemos a categoria 
 Queria saber qual seria uma saída para evitar esse número de consultas ao banco.
 
 
-
 Prezado aluno,
 
-Agradecemos por compartilhar sua observação sobre o uso do GraphQL em nosso sistema de cursos. Entendemos a preocupação com o número potencialmente elevado de consultas ao banco de dados ao obter as categorias dos cursos listados.
+Entendi sua preocupação com as consultas frequentes ao banco de dados ao buscar as categorias dos cursos.
 
-Para otimizar o processo e evitar consultas excessivas ao banco de dados, recomenda-se a implementação de estratégias de carregamento antecipado (eager loading) ou batching, dependendo da estrutura e das tecnologias utilizadas em nosso ambiente de desenvolvimento.
+Para resolver isso, uma solução eficaz, especialmente em ambientes GraphQL, é o uso do DataLoader. O DataLoader é uma biblioteca que facilita o batching (agrupamento de consultas) e caching (armazenamento em cache) automático de consultas ao banco de dados. Ele agrupa múltiplas solicitações de dados semelhantes em uma única consulta, reduzindo assim a carga no banco de dados.
 
-Eager Loading (Carregamento Antecipado): Se estivermos utilizando um ORM compatível, como Sequelize, podemos configurá-lo para carregar os cursos juntamente com suas categorias em uma única consulta ao banco de dados. Isso reduzirá significativamente o número de consultas, melhorando o desempenho do sistema.
+Para usar o DataLoader, primeiro você instala com um comando. Depois, configura ele no código do sistema para carregar as categorias de forma mais eficiente. Isso vai reduzir o número de consultas ao banco de dados e melhorar o desempenho do sistema.
 
-Batching: Para bancos de dados NoSQL ou situações onde não há suporte direto para eager loading, podemos implementar batching manualmente. Isso envolve agrupar os IDs das categorias necessárias para os cursos e realizar uma única consulta para obter todas as categorias de uma vez, minimizando assim o impacto no banco de dados.
+Se precisar de ajuda para fazer isso ou tiver mais perguntas, estou à disposição.
 
-Implementar uma dessas abordagens depende das especificidades técnicas do projeto e pode exigir ajustes adicionais conforme necessário. Se precisar de assistência adicional na implementação ou tiver outras dúvidas relacionadas, por favor, não hesite em nos contatar.
-
-Agradecemos novamente pelo seu feedback construtivo, que nos permite melhorar continuamente nossos sistemas e serviços.
+Obrigado pelo seu feedback!
 
 Atenciosamente,
 
 Lavínia Sá
-
-Equipe de Suporte Técnico
+Equipe de Suporte
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 2 - Fiquei com dúvida de qual seria a melhor forma de fazer, seguindo os princípios de DDD e Clean Arch.
@@ -91,7 +87,7 @@ Lavínia Sá
 
 Equipe de Suporte Técnico
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
